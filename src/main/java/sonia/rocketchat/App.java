@@ -46,7 +46,7 @@ public class App
     {
       parser.parseArgument(args);
 
-      if (OPTIONS.isDisplayHelp())
+      if (OPTIONS.isDisplayHelp() || args.length == 0 )
       {
         parser.printUsage(System.out);
       }
