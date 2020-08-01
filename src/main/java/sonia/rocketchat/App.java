@@ -64,7 +64,7 @@ public class App
         LOGGER.debug("  Message text = " + OPTIONS.getText());
 
         RocketChatRestClient client = RocketChatRestClientFactory.createClient(
-          OPTIONS.getHost(), true);
+          OPTIONS.getHost(), !OPTIONS.isNoSSL());
 
         boolean loginSuccess = false;
 

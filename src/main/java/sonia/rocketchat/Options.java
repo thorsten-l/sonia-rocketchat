@@ -108,4 +108,16 @@ public class Options
   @Getter
   @Setter
   private String text;
+
+  /**
+   * Field description
+   */
+  @Option(
+    name = "--no-ssl",
+    usage = "No secure connection"
+  )
+  @Getter
+  @Setter
+  private boolean noSSL = false;
+
 }
